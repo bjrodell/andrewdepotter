@@ -1,0 +1,628 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+.pagewrap, #contents {
+	background-color:#B0A58A;
+	
+}
+
+
+/***********************************Header styles************************************************/
+header {
+	min-height:200px;
+	position:fixed;
+	z-index:78;
+	width:100%;
+	
+}
+
+.largebackground {
+	background-color:#ffffff;
+	
+	/****gradient***/
+	background: -webkit-linear-gradient(rgba(255,255,255,1) 40%,  rgba(255,255,255,0.5) , rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,1) 40%,  rgba(255,255,255,0.5) , rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,1) 40%,  rgba(255,255,255,0.5) , rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,1) 40%,  rgba(255,255,255,0.5) , rgba(255,255,255,0)); /* Standard syntax */
+}
+
+.smallbackground {
+	background-color:#ffffff;
+	
+	/****gradient***/
+	background: -webkit-linear-gradient(rgba(255,255,255,0.6) 60%,  rgba(255,255,255,0.5) 25%, rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,0.6) 60%,  rgba(255,255,255,0.5) 25%, rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,0.6) 60%,  rgba(255,255,255,0.5) 25%, rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,0.6) 60%,  rgba(255,255,255,0.5) 5%, rgba(255,255,255,0)); /* Standard syntax */
+}
+
+a:hover, button p:hover {
+	text-decoration:none;
+	color:#cccccc;
+}
+
+button:focus {
+	outline:none;
+}
+
+#logo {
+	width:24%;
+	height:auto;
+	margin-top:1%;
+	margin-left:3%;
+	display:inline-block;
+}
+
+#logo img {
+	
+}
+
+.fullsize {
+	width:100%;
+}
+
+.halfsize {
+	width:50%;
+}
+
+
+nav {
+	display:inline-block;
+	width:60%;		
+}
+
+nav ul {
+	list-style-type:none;
+	position:absolute;
+	top:20%;
+	width:100%;
+}
+
+nav a, #divisionsbutton, #backbutton {
+	font-size:2.1em;
+	color:#59a487;
+	text-decoration:none;
+	font-family:'Palatino Linotype', Palatino, Baskerville, 'Century Schoolbook L', 'Times New Roman', 'serif';
+}
+
+#links {
+	display:inline-block;
+	width:100%;
+	margin-left:5%;
+}
+
+#links ul li {
+	display:inline-block;
+	margin-left:3%;
+}
+
+
+
+
+.hiddenlinks {
+	visibility:hidden;
+}
+
+.visiblelinks {
+	visibility:visible;
+}
+
+/*********************************************three line box styles*******************************************************/
+.threelinebox {
+  display:inline-block;
+  min-height:75px;
+  min-width:75px;
+  visibility:hidden;
+  float:right;
+}
+
+
+/*********************************************mission statement styles**************************************************/
+
+#missiontext {
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+	color:#2E1C17;
+	font-size:1.5em;
+}
+
+
+/**********************************************contents section styles**********************************************/
+#contents {
+	height:auto;
+}
+
+#contents h1 {
+	text-align:center;
+	font-size:2.4em;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	margin-top:10%;
+	color:#253856;
+}
+
+#contents h3 {
+	text-align:center;
+	font-size:1.9em;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	margin-top:1.5%;	
+}
+
+#contentslinksbox {
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5%;
+	padding-bottom:5%;
+}
+
+.contentslinks {
+	height:100%;
+	width:100%;
+	margin-left:2%;
+	display:inline-block;
+}
+
+.contentslinks ul li  {
+	display:inline-block;
+	margin-left:10%;
+}
+
+#ratingsbox {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:3%;
+}
+
+
+
+/************************************************************footer styles******************************************************/
+footer {
+	
+}
+
+
+
+/******************************************************Styles for the gallery page *******************************************/
+#gallerycontainer {
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:15%;
+}
+
+#gallerycontainer a img{
+	max-width:350px;
+	max-height:350px;
+	margin:3%;	
+}
+
+.gallerypictures {
+	display:inline-block;
+}
+
+#gallerybuttons {
+	margin-top:2%;
+	width:50%;
+	margin-left:25%;
+}
+
+#gallerybuttons button {
+	margin-left:4%;
+	width:20%;
+	font-weight:600;
+	border-radius:15px;
+	border:3px solid #66b9bf;
+	padding:4px;
+}
+
+.inactivefilter {
+	background-color:#ffffff;
+	color:#66b9bf;
+}
+
+.activefilter {
+	background-color:#07889b;
+	color:#ffffff;
+}
+
+#groupone, #grouptwo, #groupthree, #groupfour {
+	display:inline-block;
+}
+
+.hidden {
+	visibility:hidden;
+}
+
+.visible {
+	visibility:visible;
+}
+
+/*********************************************************light box styles ***************************************************/
+
+#lightbox {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: #000000;
+	opacity: 0.9;
+	z-index:18;
+}
+
+.lightboxtext {
+	z-index:19;
+	color:#ffffff;
+	width:50%;
+	margin-left:25%;
+}
+.visiblebox {
+	visibility: visible;
+	z-index:5;
+}
+
+.hiddenbox {
+	visibility: hidden;
+}
+
+
+#picturebox {
+	width:100%;
+	z-index: 95;
+	position:absolute;
+}
+
+#picturebox img {
+	width:50%;
+	height:40%;
+	margin-left:25%;
+	margin-top:5%;
+}
+
+#cancellightbox {
+	width: 40px;
+	height: 40px;
+	position:absolute;
+	top:14%;
+	left:72%;
+	z-index:99;
+	text-align:center;
+	cursor:pointer;
+	
+}
+
+#cancellightbox p {
+	font-size: 2.3em;
+	color: #ffffff;
+	text-shadow: 3px 3px 2px #000000;
+}
+
+#cancellightbox:hover {
+	color:#FFFFFF;
+}
+
+
+
+/**********************************************middle sized screen styles******************************************************/
+
+@media only screen and (max-width:1366px) and (min-width:737px) {
+
+#logo {
+	width:30%;
+}
+	
+header {
+	min-height:100px;
+}
+	
+#headerCarousel {
+	padding-top:20%;
+}
+
+nav {
+	display:block;
+	margin-top:12%;
+	margin-left:auto;
+	margin-right:auto;
+}
+	
+nav ul {
+	top:30%;
+}
+	
+nav a, #divisionsbutton {
+	font-size:1.8em;
+}
+	
+#divisions ul {
+	margin-top:5%;
+}
+
+#links {
+	margin-left:0%;
+}
+	
+#contents h1 {
+	margin-top:25%;
+}
+	
+#ratingsbox {
+	margin-left:-10%;
+}
+
+	
+#gallerycontainer {
+	padding-top:22%;
+}
+	
+#gallerybuttons {
+	margin-top:-7%;
+	margin-left:auto;
+	margin-right:auto;
+}
+	
+#cancellightbox {
+	width: 40px;
+	height: 40px;
+	position:absolute;
+	top:14%;
+	left:70%;
+	z-index:99;
+	text-align:center;
+	cursor:pointer;	
+}
+	
+}
+
+
+/******************************************************MOBILE STYLES *********************************************************/
+/* Beginning of css media queries for different screen sizes -- this works on iphone 7 browser --*/
+	
+
+@media only screen and (max-width: 736px) and (min-width: 100px) and (orientation:portrait)    {
+	
+/******************************************three line box styles***************************************************************/
+.threelinebox {
+  position:absolute;
+  top:2px;
+  left:79%;
+  min-height:50px;
+  min-width:50px;
+  visibility:visible;
+  z-index:17;
+}
+
+.threelinebox ul {
+	list-style-type:none;
+	text-decoration:none;
+	width:100%;
+	height:100%;
+}
+
+.threelinebox ul li {
+	margin-top:5px;	
+	width:60px;
+	
+}
+
+#lineone {
+	height:14px;
+	background-color:#ffffff;
+	box-shadow: 2px 2px 6px #aaaaaa;
+}
+
+#linetwo {
+	height:14px;
+	width:60px;	
+	transition:width 0.2s, transform 0s;
+	background-color:#ffffff;
+	box-shadow: 2px 2px 6px #aaaaaa;
+}
+
+#linethree {
+	height:14px;
+	background-color:#ffffff;
+	box-shadow: 2px 2px 6px #aaaaaa;
+}
+
+/*Styles that allow three line box to turn into an x **/
+.lineone {
+    transition-delay: 0s;
+	transition-property: transform 0.5s; /*rotates from the top*/
+}
+
+.linethree {
+    transition-delay: 0s;
+	transition-property: transform 0.5s;/*rotates from the bottom*/
+}
+
+.threelinebox.is-active {	
+ 	left:83%;
+	position:fixed;
+	}
+	
+
+#lineone.is-active {
+	transition-duration: 0.2s, 0.2s;
+    transition-delay: 0s, 0s;
+    transform: rotate(45deg) translateY(27px);/*rotate the top line*/
+}
+
+#linetwo.is-active {
+	box-shadow:none;
+	width:0px;
+	transform: translateX(27px);
+}
+
+#linethree.is-active {
+	transition-duration: 0.2s, 0.2s;
+	transition-delay: 0s, 0s;
+    transform: rotate(-45deg) translateY(-27px);
+	
+}
+	
+/*****************************************************header*************************************************************/
+header {
+	min-height:100px;
+}
+
+#logo {
+	min-width:67%;	
+}
+	
+/******************************************************nav***************************************************************/
+nav {
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background-color:rgba(0,0,0,0.9);
+	z-index:17;
+}
+
+nav a {
+	display:block;
+	margin-top:5%;
+	font-size:2.5em;
+	text-decoration:none;
+}
+	
+nav button {
+	position:absolute;
+}
+	
+	
+nav p {
+	font-size:1.7em;	
+}
+	
+#links {
+	position:absolute;
+	left:15%;
+	top:17%;
+}
+
+#links ul li {
+	display:block;
+	width:70%;
+}
+	
+nav.hiddennav {
+	visibility:hidden;
+}
+	
+nav.visiblenav {
+	visibility:visible;	
+}
+	
+.blurry {
+	-webkit-filter:blur(10px);
+	filter:blur(10px);
+}
+
+#navlineone, #navlinetwo, #navlinethree, #navlinefour {
+	-webkit-transition:opacity 1s;
+	transition:opacity 1s;	
+}
+	
+#navlineone.blurry, #navlinetwo.blurry, #navlinethree.blurry, #navlinefour.blurry {
+	opacity:0;
+	-webkit-transition-timing-function:ease-out;
+	transition-timing-function:ease-out;	
+}
+	
+/******************************************************footer***********************************************************/
+
+footer {
+	margin-top:60%;
+}
+	
+.footerinfo {
+	width:100%;
+	margin-left:0%;
+	display:block;
+	min-height:100px;
+	max-height:200px;
+}
+	
+#footerlogo {
+	max-height:200px;
+}
+	
+#footerinfobox {
+	height:auto;
+}
+
+#address,
+#hoursofoperation,
+#location {
+	position:static;
+}
+	
+#hoursofoperation {
+	margin-top:8%;
+}
+	
+/*********************************************************gallery styles ***************************************************/
+
+#gallerycontainer {
+	width:100%;
+	
+}
+
+#gallerycontainer a img{
+	max-width:100%;
+	max-height:60%;
+	margin:0%;
+	margin-top:5%;
+}
+	
+.lightboxtext {
+	width:100%;
+	margin-left:0%;
+}
+	
+#picturebox {
+	position:fixed;
+	top:0%;
+}
+	
+#picturebox img {
+	width:100%;
+	margin-left:0%;
+	margin-top:0%;
+}
+	
+#cancellightbox {
+	left:88%;
+	top:0%;
+}
+
+#gallerybuttons {
+	margin-left:0%;
+	width:100%;
+}
+
+#gallerybuttons button {
+	margin-left:2%;
+	width:22%;
+	font-size:0.9em;
+	border-radius:12px;
+	border:none;
+}	
+	
+
+
+
+	
+}/*************************************** End of mobile styles *************************************************************************/
+
+
+
+
