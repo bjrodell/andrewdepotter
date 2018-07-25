@@ -1,13 +1,167 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Splash Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<link rel="shortcut icon" type="image/png" href="favicon.png"><!-- used for icon in tab-->
+	
+	<!--BOOTSTRAP 4-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	
+	<script src="//use.edgefonts.net/josefin-sans;source-sans-pro.js"></script><!--global fonts-->
+	
+	<!-- CSS containing social media icons:  Reference https://www.w3schools.com/howto/howto_css_social_media_buttons.asp for more info -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	
+	<!-- theme related css file-->
+	<link rel="stylesheet" type="text/css" href="theme1.css">
+
+	<!--site specific stylesheet-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/animate.css">
+	
+	<!-- Forward to  IE compatible site -->
+	<script src="./js/iecompat.js"></script>
 </head>
 
 <body>
-
-<a href="content/main.php">Click to go to main page</a>
-
+    
+	<div class="container-fluid">
+		<header>
+			
+			<!-- navigation-->
+			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light" style="padding: 0px">
+			
+				<a class="navbar-brand" style="background-color: white" href="#"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse " id="navbarSupportedContent" >
+				
+				<ul class="navbar-nav ">
+					<li class="nav-item col-md-2 active">
+						<a href='#'>Home</a>
+					</li>
+					<li class="nav-item col-md-3" >
+						<a href='content/page1.html' style="line-height:35px">page1</a>
+					</li>
+					<li class="nav-item col-md-2" style="line-height:35px">
+						<a href='content/page2.html'>page2</a>
+					</li>
+					<li class="nav-item col-md-3" style="line-height:35px">
+						<a href='content/page3.html'>page3</a>
+					</li>
+					<li class="nav-item col-md-2" style="line-height:35px">
+						<a href='content/page4.html'>page4</a>
+					</li>
+				</ul>
+				</div><!-- closes collapse div-->
+			</nav><!--closes nav-->
+		
+			<div  class="jumbotron jumbotron-fluid" >
+				<div class="container" >
+					<h1>Company Name</h1>
+						<h5>Tagline</h5>
+						<h6><a href="tel:5852453226">(555) 555-5555</a></h6>
+						<h6><a href="mailto:emailaddress@gmail.com">emailaddress@gmail.com</a></h6>
+						<a href="content/page1.html" class="btn btn-info">page1 link</a>
+					<h2>
+						<a href="#" class="fa fa-facebook" style="text-decoration : none" ></a>
+						<a href="#" class="fa fa-twitter" style="text-decoration : none"></a>
+						<a href="#" class="fa fa-instagram" style="text-decoration : none"></a>
+						<a href="#" class="fa fa-pinterest" style="text-decoration : none"></a>
+					</h2>
+					<img src="media/logo/headerlogo.png">
+				</div>
+			</div>
+		</header>
+		
+		<div class="page-content">
+		<center>
+		<div class="card index-card-1 animated delay-1">
+			<div class="card-header">
+				<h3 class="animated card-title delay-2" style="Text-align: left">Card Title</h3>
+			</div>
+			<div class="card-body d-none">
+				<img src="media/placeholder.jpg" class="card-img-top">
+				<div class="card-img-overlay text-center">
+					<p class="card-text text-center img-overlay text-white">Card Caption goes here.</p>
+					<div class="container">
+						<div class="row">
+							<div class="col-3 "></div>
+							<a href="content/page1.html" class="btn btn-info col-6">Call to Action</a>
+						</div><!-- closes row-->
+					</div><!--closes container-->
+				</div><!--closes image overlay-->
+			</div><!--closes card body-->
+		</div><!--closes card-->
+		
+		<div class="card index-card-2 animated delay-1">
+			<div class="card-header">
+				<h3 class="animated card-title delay-2"  style="Text-align: left">Card Title</h3>
+			</div>
+			<div class="card-body d-none">
+				<img src="media/placeholder.jpg" class="card-img-top">
+				<div class="card-img-overlay text-center">
+					<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>
+					<div class="container">
+						<div class="row">
+							<div class="col-3 "></div>
+							<a href="content/page2.html" class="btn btn-info col-6">Call to Action</a>
+						</div><!-- closes row-->
+					</div><!--closes container-->
+				</div><!--closes image-overlay-->
+			</div><!--closes card-body-->
+		</div><!-- closes card-->
+		</div><!--closes page-content-->
+		</center>
+		
+		<footer>
+			<!-- address, contact info-->
+			<div class="card">
+				<ul class="list-group text-center">
+					<li class="list-group-item">
+						<h6>Contact:</h6>
+					</li>
+					<li class="list-group-item">
+						<a href="tel:5555555555" class="btn btn-outline-primary">Call Me</a>
+						<a href="mailto:emailaddress@gmail.com" class="btn btn-outline-primary">Email Me</a>
+					</li>
+					<li class="list-group-item">
+						<br>	
+						<h3>Company Title</h3>
+					</li>
+					<li class="list-group-item">
+						<p>Additional Statement about services offered</p>
+					</li>
+					<li class="list-group-item">
+						<p>Company Tagline</p>
+					</li>
+					<li style="font-size: 2.5em">
+						<a href="#" class="fa fa-facebook" style="text-decoration : none" ></a>
+						<a href="#" class="fa fa-twitter" style="text-decoration : none"></a>
+						<a href="#" class="fa fa-instagram" style="text-decoration : none"></a>
+						<a href="#" class="fa fa-pinterest" style="text-decoration : none"></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		
+	</div><!--closes container fluid-->
+		
+	
+	<script src='./js/animateHeadings.js'></script>	
+		
 </body>
 </html>
