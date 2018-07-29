@@ -100,6 +100,7 @@ footer p {
 	left:25%;
 }
 
+
 .card-header, .card-footer {
 	border:none;
 	background-color:#ffffff;
@@ -198,7 +199,28 @@ input[type=text], input[type=email], select {
 	animation-delay:2s;
 }
 
+/*********************************** LIGHTBOX STYLES *************************************/
 
+.lightbox {
+	position:fixed;
+	height:100%;
+	width:100%;
+	background-color:rgba(0,0,0,0.8);
+	z-index:20;
+}
+
+.lightbox img {
+	width:60%;
+	max-height:100%;
+	margin-left:2%;
+}
+
+.lightbox p {
+	width:30%;
+	color:#ffffff;
+	margin-left:2%;
+	display:inline-block;
+}
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
