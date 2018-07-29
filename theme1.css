@@ -225,7 +225,6 @@ input[type=text], input[type=email], select {
 .close {
 	color:#ffffff;
 	font-size:3.0em;
-	z-index:99;
 }
 
 .close:hover {
