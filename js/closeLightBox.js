@@ -1,5 +1,5 @@
 // JavaScript Document
 function closeLightBox (){
-		$('.lightbox').addClass("d-none");
+		$('.lightbox').fadeOut();
 		$('body').css('overflow','auto');
 	};

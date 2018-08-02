@@ -4,8 +4,10 @@ jQuery(document).ready(function($){
 	$('.card-body').click(function(e){
 	  e.preventDefault();
 	  var image_src = $(this).children(".gallery").attr("src"); 
-	    $('.lightbox').html('<img src ="' +image_src+ '">'+'<p>Paragraph about how awesome this thing is.</p>'+'<button type="button" class="close" aria-label="Close">'+'<span onclick="closeLightBox()" aria-hidden="true">&times;</span>'+'</button>');
-		$('.lightbox').removeClass("d-none");
+	  var title = $(this).children(".gallery").attr("title"); 
+	    $('.lightbox').html('<img src ="' +image_src+ '" style="height: 85%;width: auto;position: center;">'+'<p>'+ title +'</p>'+$('.lightbox-footer').html()+'<button type="button" class="close" aria-label="Close" style="position: absolute; top: 5px; right: 30px;">'+'<span onclick="closeLightBox()" aria-hidden="true">&times;</span>'+'</button>');
+		$('.lightbox').fadeIn(1000);
 		$('body').css('overflow','hidden');
+		
 	});
 });
