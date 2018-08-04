@@ -35,49 +35,11 @@ jQuery(document).ready(function($){
 		
 		});	
 		
-		$('.but').on("click",function(){
-	  
-		counter = $(this).addClass('thumb-border').attr("alt");
-		document.getElementById('centerStage').src = gal[(Math.abs(counter))%x].src;
-		
-		$('.thumbnail').each(function() {
-		if($(this).attr("alt")!= Math.abs(counter)){
-		$(this).removeClass('thumb-border');
-		}
-		});
-		
-		});
-		
-		
-		
-		
-		
-		
 		
 		
 	});
 	
-/**	function borderJumper(){
-	
-		$('.thumbnail').each(function() {
-			if($(this).attr("alt")!= Math.abs(counter)){
-				$(this).removeClass('thumb-border');
-			}else{
-				$(this).addClass('thumb-border');
-			}
-		}
-	
-		if($('.thumbnail').attr("alt") == Math.abs(counter)){
-			$('.thumbnail').addClass('.thumb-border');
-		}else{
-			$('.thumbnail').removeClass('.thumb-border');
-		} 
-	}
-	
-		*/
-	
 
-	
 });
 	
 function borderJumper(){

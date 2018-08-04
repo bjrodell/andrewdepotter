@@ -47,7 +47,7 @@
 			
 		    <script src='./js/populateLightBox.js'></script>
 			<button onclick="counter--;document.getElementById('centerStage').src = gal[(Math.abs(counter))%x].src;borderJumper();"  style="position: absolute; left:20px;"><</button>
-			
+			<button onclick="counter++;document.getElementById('centerStage').src = gal[(Math.abs(counter))%x].src;borderJumper()" style="position: absolute; right:20px;">></button>
 			<div class="thumbs" style="">
 				<img id="thumb" class="thumbnail" src="media/gallery/facade.jpg" alt="0">
 			    <img id="thumb" class="thumbnail"  src="media/gallery/davidbowie.jpg" alt="1">
@@ -59,7 +59,7 @@
 			
 			</div> 
 			
-			<button onclick="counter++;document.getElementById('centerStage').src = gal[(Math.abs(counter))%x].src;borderJumper()" style="position: absolute; right:20px;">></button>
+			
 		
 		
 
