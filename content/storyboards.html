@@ -3,16 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home Page</title>
-	<link rel="shortcut icon" type="image/png" href="favicon.png"><!-- used for icon in tab-->
+	<title>Page Title</title>
+	<link rel="icon" href="#"><!-- used for icon in tab-->
 	
 	<!--BOOTSTRAP 4-->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
 	<!-- Popper JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	<!-- Latest compiled JavaScript -->
@@ -20,61 +18,59 @@
 	
 	<script src="//use.edgefonts.net/josefin-sans;source-sans-pro.js"></script><!--global fonts-->
 	
-	<!-- CSS containing social media icons:  Reference https://www.w3schools.com/howto/howto_css_social_media_buttons.asp for more info -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 	
-	<!-- theme related css file-->
-	<link rel="stylesheet" type="text/css" href="theme1.css">
-
+	<!--theme stylesheet-->
+	<link rel="stylesheet" type="text/css" href="../theme1.css">
+	
 	<!--site specific stylesheet-->
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../styles.css">
 	
-	<!-- Forward to  IE compatible site -->
-	<script src="./js/iecompat.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
 </head>
 
 <body>
-    
+
 	<div class="lightbox d-none">
 	</div>
+    
 	<div class="container-fluid">
-		<header>
-			
+	
+		<header>	
 			<!-- navigation-->
-			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light" style="padding: 0px">
+			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light">
 			
-				<a class="navbar-brand" style="background-color: white" href="#"></a>
+				<a class="navbar-brand" href='#'>Page Title</a>
+				
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				
-				<div class="collapse navbar-collapse " id="navbarSupportedContent" >
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				
-				<ul class="navbar-nav ">
+				<ul class="navbar-nav">
 					<li class="nav-item col-md-2 active">
-						<a href='#'>Home</a>
+						<a href='../index.html'>Home</a>
 					</li>
 					<li class="nav-item col-md-2">
-						<a href="content/quote.html" style="line-height:35px">Request Quote</a>
+						<a href="page1.html" style="line-height:35px">Request Quote</a>
 					</li>
 					<li class="nav-item col-md-2" style="line-height:35px">
 						<a href='#'>Logos</a>
 					</li>
 					<li class="nav-item col-md-3" style="line-height:35px">
-						<a href='content/posterart.html'>Poster Art</a>
+						<a href='posterart.html'>Poster Art</a>
 					</li>
 					<li class="nav-item col-md-2" style="line-height:35px">
-						<a href='content/albumart.html'>Album Art</a>
+						<a href='albumart.html'>Album Art</a>
 					</li>
 					<li class="nav-item col-md-2" style="line-height:35px">
-						<a href='content/tattoo.html'>Tattoo Design</a>
+						<a href='tattoo.html'>Tattoo Design</a>
 					</li>
 					<li class="nav-item col-md-2" style="line-height:35px">
-						<a href='content/digital.html'>Digital</a>
+						<a href='digital.html'>Digital</a>
 					</li>
 					<li class="nav-item col-md-2" style="line-height:35px">
-						<a href='content/storyboards.html'>Storyboards</a>
+						<a href='storyboards.html'>Storyboards</a>
 					</li>
 					<li class="nav-item col-md-2" style="line-height:35px">
 						<a href='#'>Collections</a>
@@ -82,28 +78,15 @@
 				</ul>
 				</div><!-- closes collapse div-->
 			</nav><!--closes nav-->
-		
-			<div  class="jumbotron jumbotron-fluid" >
-				<div class="container">
-					<div class="row">
-						<h1 class="col-sm-10 col-md-8 col-lg-6">Andrew Depotter</h1>
-						<h5 class="sol-sm-10 col-md-3 col-lg-3">Artist/Illustrator</h5>
-					</div>
-					<div class="row">
-						<h6 class="col-sm-10 col-md-3 col-lg-3"><a href="mailto:ad.lxxxiv@gmail.com">ad.lxxxiv@gmail.com</a></h6>
-					</div><!--ends row-->
-					<div class="row">
-						<a href="content/page1.html" class="btn btn-info col-sm-4 col-md-3 col-lg-4">Request a Quote</a>
-						<div class="col-sm-0 col-md-2 col-lg-2"></div>
-						<h2 class="col-sm-4 col-md-4 col-lg-4">
-							<a href="#" class="fa fa-facebook" style="text-decoration : none" ></a>
-							<a href="#" class="fa fa-twitter" style="text-decoration : none"></a>
-							<a href="#" class="fa fa-instagram" style="text-decoration : none"></a>
-							<a href="#" class="fa fa-pinterest" style="text-decoration : none"></a>
-						</h2>
-					</div><!--ends row-->
-				</div>
-			</div>
+			
+			<div style="background-image: url('../media/wrench.jpeg');background-size: 100% 100%;margin: 0;height: 100%" class="jumbotron jumbotron-fluid" >
+				<div style="height:400px"  class="container" >
+					<h1>Company Name</h1> 
+					<h5>Service line</h5>
+					<h6><a href="mailto:ad.lxxxiv@gmail.com">ad.lxxxiv@gmail.com</a></h6>
+					<a href="content/page1.html" class="btn btn-info">Request a Quote</a></p>
+				</div><!--closes container-->
+			</div><!--closes jumbotron-->
 		</header>
 		
 		<div class="page-content">
@@ -113,7 +96,7 @@
 				<h3 class="animated card-title delay-2" style="Text-align: left">Facade</h3>
 			</div>
 			<div class="card-body d-none">
-				<img src="media/gallery/facade.jpg" class="card-img-top  gallery">
+				<img src="../media/gallery/facade.jpg" class="card-img-top  gallery">
 				<div class="card-img-overlay text-center">
 					<!--<p class="card-text text-center img-overlay text-white">Card Caption goes here.</p>-->
 					<div class="container">
@@ -131,7 +114,7 @@
 				<h3 class="animated card-title delay-2"  style="Text-align: left">Keep Your ‘Lectric eye on me, babe</h3>
 			</div>
 			<div class="card-body d-none">
-				<img src="media/gallery/davidbowie.jpg" class="card-img-top gallery">
+				<img src="../media/gallery/davidbowie.jpg" class="card-img-top gallery">
 				<div class="card-img-overlay text-center">
 					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
 					<div class="container">
@@ -149,7 +132,7 @@
 				<h3 class="animated card-title delay-2"  style="Text-align: left">Rhino</h3>
 			</div>
 			<div class="card-body d-none">
-				<img src="media/gallery/rhinopainting.jpg" class="card-img-top gallery">
+				<img src="../media/gallery/rhinopainting.jpg" class="card-img-top gallery">
 				<div class="card-img-overlay text-center">
 					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
 					<div class="container">
@@ -168,7 +151,7 @@
 </h3>
 			</div>
 			<div class="card-body d-none">
-				<img src="media/gallery/barbershop.jpg" class="card-img-top gallery">
+				<img src="../media/gallery/barbershop.jpg" class="card-img-top gallery">
 				<div class="card-img-overlay text-center">
 					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
 					<div class="container">
@@ -186,7 +169,7 @@
 				<h3 class="animated card-title delay-2"  style="Text-align: left">The (wash) Room</h3>
 			</div>
 			<div class="card-body d-none">
-				<img src="media/gallery/thewashroom.jpg" class="card-img-top gallery">
+				<img src="../media/gallery/thewashroom.jpg" class="card-img-top gallery">
 				<div class="card-img-overlay text-center">
 					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
 					<div class="container">
@@ -204,7 +187,7 @@
 				<h3 class="animated card-title delay-2"  style="Text-align: left">Manatee</h3>
 			</div>
 			<div class="card-body d-none">
-				<img src="media/gallery/manatee.jpg" class="card-img-top">
+				<img src="../media/gallery/manatee.jpg" class="card-img-top">
 				<div class="card-img-overlay text-center">
 					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
 					<div class="container">
@@ -228,34 +211,27 @@
 						<h6>Contact:</h6>
 					</li>
 					<li class="list-group-item">
-						<a href="mailto:ad.lxxxiv@gmail.com" class="btn btn-outline-primary">Email Me</a>
+						<a href="mailto:emailaddress2018@gmail.com" class="btn btn-outline-primary">Email Me</a>
 					</li>
 					<li class="list-group-item">
 						<br>	
-						<h3>Andrew DePotter</h3>
+						<h3>Company Name</h3>
 					</li>
 					<li class="list-group-item">
-						<p>Artist/Illustrator</p>
+						<p>Service line</p>
 					</li>
 					<li class="list-group-item">
 						<p>Now Accepting Quotes</p>
 					</li>
-					<li style="font-size: 2.5em">
-						<a href="#" class="fa fa-facebook" style="text-decoration : none" ></a>
-						<a href="#" class="fa fa-twitter" style="text-decoration : none"></a>
-						<a href="#" class="fa fa-instagram" style="text-decoration : none"></a>
-						<a href="#" class="fa fa-pinterest" style="text-decoration : none"></a>
-					</li>
-				</ul>
-			</div>
+				</ul><!--closes list group-->
+			</div><!--closes card-->
 		</footer>
 		
 	</div><!--closes container fluid-->
-		
 	
-	<script src='./js/animateHeadings.js'></script>
-	<script src='./js/populateLightBox.js'></script>
-	<script src='./js/closeLightBox.js'></script>	
+	<script src='../js/animateHeadings.js'></script>
+	<script src='../js/populateLightBox.js'></script>
+	<script src='../js/closeLightBox.js'></script>		
 		
 </body>
 </html>
