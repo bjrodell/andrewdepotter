@@ -71,8 +71,8 @@ function prevSlide(){
 	document.getElementById('centerStage').src = gal[(Math.abs(counter))%x].src;
 	borderJumper();
 	
-	if(counter < 0){
-		counter = (x*10) + 1;
+	if(counter == 0){
+		counter = (x*10);
 	}
 }
 
