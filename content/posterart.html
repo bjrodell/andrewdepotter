@@ -23,18 +23,44 @@
 	
 	
 	<!--theme stylesheet-->
+	<link rel="stylesheet" type="text/css" href="../css/slides.css">
 	<link rel="stylesheet" type="text/css" href="../theme1.css">
 	
 	<!--site specific stylesheet-->
 	<link rel="stylesheet" type="text/css" href="../styles.css">
 	
 	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../css/slides.css">
 </head>
 
 <body>
 
-	<div class="lightbox d-none">
+	<div class="lightbox" style="display: none">
 	</div>
+
+	<div class="lightbox-footer" style="display: none"> <!-- Additional LightBox HTML -->
+		<div id="test" style="display:inline-block;color:white; text-align:center;align:center;height: 100%;width: 100%;">		
+			<div class="thumbs" style="inline-block;">		
+				<img id="thumb" class="thumbnail" src="../media/gallery/facade.jpg" alt="0">
+			    <img id="thumb" class="thumbnail"  src="../media/gallery/davidbowie.jpg" alt="1">
+				<img id="thumb"class="thumbnail" src="../media/gallery/rhinopainting.jpg" alt="2">
+				<img id="thumb" class="thumbnail"  src="../media/gallery/barbershop.jpg" alt="3">
+				<img id="thumb" class="thumbnail"  src="../media/gallery/thewashroom.jpg" alt="4">
+				<img id="thumb" class="thumbnail"   src="../media/gallery/manatee.jpg" alt="5" > 		
+			</div>
+		    	
+			<script src='../js/populateLightBox.js'></script> <!-- Required -->
+			
+			
+			<div><!-- Next/previous controls -->
+				<a class="slide-nav" onclick="prevSlide()"  style=" left:20px;">&#10094;</button>
+				<a class="slide-nav" onclick="nextSlide();" style=" right:20px;">&#10095;</button>
+			</div>
+
+		</div>
+		
+	</div><!-- end of footer -->
+	
     
 	<div class="container-fluid">
 	
@@ -112,7 +138,7 @@
 				<h3 class="animated card-title delay-2" style="Text-align: left">Facade</h3>
 			</div>
 			<div class="card-body d-none">
-				<img src="../media/gallery/facade.jpg" class="card-img-top  gallery">
+				<img src="../media/gallery/facade.jpg" class="card-img-top  gallery" alt="0">
 				<div class="card-img-overlay text-center">
 					<!--<p class="card-text text-center img-overlay text-white">Card Caption goes here.</p>-->
 					<div class="container">
@@ -130,7 +156,7 @@
 				<h3 class="animated card-title delay-2"  style="Text-align: left">Keep Your ‘Lectric eye on me, babe</h3>
 			</div>
 			<div class="card-body d-none">
-				<img src="../media/gallery/davidbowie.jpg" class="card-img-top gallery">
+				<img src="../media/gallery/davidbowie.jpg" class="card-img-top gallery" alt="1">
 				<div class="card-img-overlay text-center">
 					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
 					<div class="container">
@@ -148,7 +174,7 @@
 				<h3 class="animated card-title delay-2"  style="Text-align: left">Rhino</h3>
 			</div>
 			<div class="card-body d-none">
-				<img src="../media/gallery/rhinopainting.jpg" class="card-img-top gallery">
+				<img src="../media/gallery/rhinopainting.jpg" class="card-img-top gallery" alt="2">
 				<div class="card-img-overlay text-center">
 					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
 					<div class="container">
@@ -167,7 +193,7 @@
 </h3>
 			</div>
 			<div class="card-body d-none">
-				<img src="../media/gallery/barbershop.jpg" class="card-img-top gallery">
+				<img src="../media/gallery/barbershop.jpg" class="card-img-top gallery" alt="3">
 				<div class="card-img-overlay text-center">
 					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
 					<div class="container">
@@ -185,7 +211,7 @@
 				<h3 class="animated card-title delay-2"  style="Text-align: left">The (wash) Room</h3>
 			</div>
 			<div class="card-body d-none">
-				<img src="../media/gallery/thewashroom.jpg" class="card-img-top gallery">
+				<img src="../media/gallery/thewashroom.jpg" class="card-img-top gallery" alt="4">
 				<div class="card-img-overlay text-center">
 					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
 					<div class="container">
@@ -203,7 +229,7 @@
 				<h3 class="animated card-title delay-2"  style="Text-align: left">Manatee</h3>
 			</div>
 			<div class="card-body d-none">
-				<img src="../media/gallery/manatee.jpg" class="card-img-top">
+				<img src="../media/gallery/manatee.jpg" class="card-img-top gallery"  alt="5">
 				<div class="card-img-overlay text-center">
 					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
 					<div class="container">
