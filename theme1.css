@@ -51,22 +51,18 @@ a:hover {
 
 /***************************** HEADER STYLES ******************************/
 
-.jumbotron .container h1,
-.jumbotron .container h2,
-.jumbotron .container h5,
-.jumbotron .container h6 {
-	display:inline-block;
-}
-
 .jumbotron img {
-	
+	max-width:90%;
+	margin-left:5%;
 }
 
 .jumbotron {
 	background-color:#ffffff;
 }
 
-
+.jumbotron .container {
+	  
+}
 
 /***************************** FOOTER STYLES *******************************/
 
@@ -88,8 +84,6 @@ footer p {
 }
 
 /****************************** CARD STYLES ********************************/
-
-
 
 .card{
 	border:none;
@@ -117,8 +111,19 @@ footer p {
 	width:100%;
 }
 
-.card-img-overlay, .card .container, .card-body, .container-fluid {
-	padding:0;
+.img-overlay {
+    position: relative;
+	color: blue;
+	background-color:  rgba(0,0,0, 0.5);
+	border-style: solid;
+    border-color: gray;
+	border-width: 1px;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.img-overlay a {
+	position:relative;
 }
 
 
@@ -228,7 +233,6 @@ input[type=text], input[type=email], select {
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
-	
 
 }
 
@@ -239,7 +243,12 @@ input[type=text], input[type=email], select {
 	}
 	
 	.jumbotron {
-		
+		background-color:#ffffff;
+		background-image: url('media/logo/headerlogo2.png');
+		background-size: 85%; 
+		background-position: bottom;
+		background-repeat: no-repeat;
+		height:500px;
 	}
 
 	.navbar-collapse li {
@@ -250,7 +259,8 @@ input[type=text], input[type=email], select {
 	}
 	
     .card {
-		width:90%;
+		width:45%;
+		display:inline-block;
 	}
 	
 	footer .card {
@@ -261,18 +271,12 @@ input[type=text], input[type=email], select {
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
-	.card {
-		width:45%;
-		display:inline-block;
-	}
+
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
-	.card {
-		width:30%;
-		display:inline-block;
-	}
+
 }
 
 
