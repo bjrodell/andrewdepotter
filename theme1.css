@@ -15,7 +15,7 @@ Color Pallette:
 /**************************** BODY TAG STYLES ************************************/
 
 body,header,nav,.jumbotron,.page-content .card,.page-content .card-header,.page-content .card-footer,.page-content{
-	background-color: rgba(193,242,255,0.5);
+	background-color: #ffffff;
 }
 
 .navbar-nav {
@@ -242,11 +242,7 @@ input[type=text], input[type=email], select {
 	}
 	
 	.jumbotron {
-		background-image: url('media/logo/headerlogo2.png');
-		background-size: 85%; 
-		background-position: bottom;
-		background-repeat: no-repeat;
-		height:500px;
+		
 	}
 
 	.navbar-collapse li {
