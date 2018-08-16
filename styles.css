@@ -1,2 +1,29 @@
 @charset "utf-8";
 /* CSS Document */
+
+/****** SPLASH PAGE STYLES ***********/
+
+#promotion {
+	background-image:url('media/gallery/manatee.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:100%;
+	padding:0;
+	height:auto;
+	min-height:700px;
+}
+
+#splashheader {
+	margin-bottom:0;
+	padding-bottom:0;
+	height:auto;
+}
+
+
+	
+	/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+	#promotion {
+		min-height:900px;
+	}
+}

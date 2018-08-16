@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Page Title</title>
+	<link rel="icon" href="#"><!-- used for icon in tab-->
+	
+	<!--BOOTSTRAP 4-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	
+	<script src="//use.edgefonts.net/josefin-sans;source-sans-pro.js"></script><!--global fonts-->
+	
+	<!-- CSS containing social media icons:  Reference https://www.w3schools.com/howto/howto_css_social_media_buttons.asp for more info -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	<!--theme stylesheet-->
+	<link rel="stylesheet" type="text/css" href="../css/slides.css">
+	<link rel="stylesheet" type="text/css" href="../theme1.css">
+	
+	<!--site specific stylesheet-->
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+	
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../css/slides.css">
+</head>
+
+<body>
+
+	<div class="lightbox" style="display: none">
+	</div>
+
+	<div class="lightbox-footer" style="display: none"> <!-- Additional LightBox HTML -->
+		<div id="test" style="display:inline-block;color:white; text-align:center;align:center;height: 100%;width: 100%;">		
+			<div class="thumbs" style="inline-block;">		
+				<img id="thumb" class="thumbnail" src="../media/gallery/facade.jpg" alt="0">
+			    <img id="thumb" class="thumbnail"  src="../media/gallery/davidbowie.jpg" alt="1">
+				<img id="thumb"class="thumbnail" src="../media/gallery/rhinopainting.jpg" alt="2">
+				<img id="thumb" class="thumbnail"  src="../media/gallery/barbershop.jpg" alt="3">
+				<img id="thumb" class="thumbnail"  src="../media/gallery/thewashroom.jpg" alt="4">
+				<img id="thumb" class="thumbnail"   src="../media/gallery/manatee.jpg" alt="5" > 		
+			</div>
+		    	
+			<script src='../js/populateLightBox.js'></script> <!-- Required -->
+			
+			
+			<div><!-- Next/previous controls -->
+				<a class="slide-nav" onclick="prevSlide()"  style=" left:20px;">&#10094;</button>
+				<a class="slide-nav" onclick="nextSlide();" style=" right:20px;">&#10095;</button>
+			</div>
+
+		</div>
+		
+	</div><!-- end of footer -->
+	
+    
+	<div class="container-fluid">
+	
+		<header>	
+			<!-- navigation-->
+			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light">
+			
+				<a class="navbar-brand" href='#'>Page Title</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				
+								
+				<ul class="navbar-nav">
+					<li class="nav-item col-md-2 active">
+						<a class="nav-link" href='../index.html'>Home</a>
+					</li>
+					<li class="nav-item col-md-2">
+						<a class="nav-link" href="page1.html">Request Quote</a>
+					</li>
+					<li class="nav-item col-md-2 dropdown" >
+						<a class="nav-item nav-link dropdown-toggle" href='#' id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Collections</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+							<a class="dropdown-item" href="tattoo.html">Collection 1</a>
+							<a class="dropdown-item" href="#">Collection 2</a>
+						</div>
+					</li>
+					<li class="nav-item col-md-2 dropdown" id="navbarDropdown1">
+						<a class="nav-item nav-link dropdown-toggle" href='#'  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Logos</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+							<a class="dropdown-item" href="#">Business/Professional</a>
+							<a class="dropdown-item" href="#">Fantasy Sports Logos</a>
+						</div>
+					</li>
+					<li class="nav-item col-md-3">
+						<a class="nav-link" href='posterart.html'>Poster Art</a>
+					</li>
+					<li class="nav-item col-md-2">
+						<a class="nav-link" href='albumart.html'>Album Art</a>
+					</li>
+					<li class="nav-item col-md-2">
+						<a class="nav-link" href='tattoo.html'>Tattoo Design</a>
+					</li>
+					<li class="nav-item col-md-2">
+						<a class="nav-link" href='digital.html'>Digital</a>
+					</li>
+					<li class="nav-item col-md-2">
+						<a class="nav-link" href='storyboards.html'>Storyboards</a>
+					</li>
+				</ul>
+				</div><!-- closes collapse div-->
+			</nav><!--closes nav-->
+			
+			<div  class="jumbotron jumbotron-fluid" >
+				<div class="container">
+					<div class="row">
+						<h1 class="col-sm-10 col-md-8 col-lg-6">Andrew DePotter</h1>
+					</div>
+					<div class="row">
+						<h5 class="col-sm-9 col-md-2 col-lg-2">Artist/Illustrator</h5>
+						<div class="col-sm-0 col-md-2 col-lg-4"></div>
+						<h6 class="col-sm-10 col-md-3 col-lg-3"><a href="mailto:ad.lxxxiv@gmail.com">ad.lxxxiv@gmail.com</a></h6>
+					</div><!--ends row-->
+					<div class="row">
+						<a href="quote.html" class="btn btn-info col-sm-3 col-md-3 col-lg-4">Request a Quote</a>
+						<div class="col-sm-0 col-md-1 col-lg-2"></div>
+						<h2 class="col-sm-4 col-md-4 col-lg-4">
+							<a href="#" class="fa fa-facebook" style="text-decoration : none" ></a>
+							<a href="#" class="fa fa-twitter" style="text-decoration : none"></a>
+							<a href="#" class="fa fa-instagram" style="text-decoration : none"></a>
+							<a href="#" class="fa fa-pinterest" style="text-decoration : none"></a>
+						</h2>
+					</div><!--ends row-->
+				</div>
+			</div>
+		</header>
+		
+		<div class="page-content">
+		<center>
+		<div class="card index-card-1 animated delay-1">
+			<div class="card-header">
+				<h3 class="animated card-title delay-2" style="Text-align: left">Facade</h3>
+			</div>
+			<div class="card-body d-none">
+				<img src="../media/gallery/facade.jpg" class="card-img-top  gallery" alt="0">
+				<div class="card-img-overlay text-center">
+					<!--<p class="card-text text-center img-overlay text-white">Card Caption goes here.</p>-->
+					<div class="container">
+						<div class="row">
+							<div class="col-3"></div>
+							<a href="content/page1.html" class="btn btn-info col-6">Call to Action</a>
+						</div><!-- closes row-->
+					</div><!--closes container-->
+				</div><!--closes image overlay-->
+			</div><!--closes card body-->
+		</div><!--closes card-->
+		
+		<div class="card index-card-2 animated delay-1">
+			<div class="card-header">
+				<h3 class="animated card-title delay-2"  style="Text-align: left">Keep Your ‘Lectric eye on me, babe</h3>
+			</div>
+			<div class="card-body d-none">
+				<img src="../media/gallery/davidbowie.jpg" class="card-img-top gallery" alt="1">
+				<div class="card-img-overlay text-center">
+					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
+					<div class="container">
+						<div class="row">
+							<div class="col-3 "></div>
+							<a href="content/page2.html" class="btn btn-info col-6">Call to Action</a>
+						</div><!-- closes row-->
+					</div><!--closes container-->
+				</div><!--closes image-overlay-->
+			</div><!--closes card-body-->
+		</div><!-- closes card-->
+		
+		<div class="card index-card-3 animated delay-1">
+			<div class="card-header">
+				<h3 class="animated card-title delay-2"  style="Text-align: left">Rhino</h3>
+			</div>
+			<div class="card-body d-none">
+				<img src="../media/gallery/rhinopainting.jpg" class="card-img-top gallery" alt="2">
+				<div class="card-img-overlay text-center">
+					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
+					<div class="container">
+						<div class="row">
+							<div class="col-3 "></div>
+							<a href="content/page2.html" class="btn btn-info col-6">Call to Action</a>
+						</div><!-- closes row-->
+					</div><!--closes container-->
+				</div><!--closes image-overlay-->
+			</div><!--closes card-body-->
+		</div><!-- closes card-->
+		
+		<div class="card index-card-4 animated delay-1">
+			<div class="card-header">
+				<h3 class="animated card-title delay-2"  style="Text-align: left">Meanwhile, at the barbershop...
+</h3>
+			</div>
+			<div class="card-body d-none">
+				<img src="../media/gallery/barbershop.jpg" class="card-img-top gallery" alt="3">
+				<div class="card-img-overlay text-center">
+					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
+					<div class="container">
+						<div class="row">
+							<div class="col-3 "></div>
+							<a href="content/page2.html" class="btn btn-info col-6">Call to Action</a>
+						</div><!-- closes row-->
+					</div><!--closes container-->
+				</div><!--closes image-overlay-->
+			</div><!--closes card-body-->
+		</div><!-- closes card-->
+		
+		<div class="card index-card-5 animated delay-1">
+			<div class="card-header">
+				<h3 class="animated card-title delay-2"  style="Text-align: left">The (wash) Room</h3>
+			</div>
+			<div class="card-body d-none">
+				<img src="../media/gallery/thewashroom.jpg" class="card-img-top gallery" alt="4">
+				<div class="card-img-overlay text-center">
+					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
+					<div class="container">
+						<div class="row">
+							<div class="col-3 "></div>
+							<a href="content/page2.html" class="btn btn-info col-6">Call to Action</a>
+						</div><!-- closes row-->
+					</div><!--closes container-->
+				</div><!--closes image-overlay-->
+			</div><!--closes card-body-->
+		</div><!-- closes card-->
+		
+		<div class="card index-card-6 animated delay-1">
+			<div class="card-header">
+				<h3 class="animated card-title delay-2"  style="Text-align: left">Manatee</h3>
+			</div>
+			<div class="card-body d-none">
+				<img src="../media/gallery/manatee.jpg" class="card-img-top gallery"  alt="5">
+				<div class="card-img-overlay text-center">
+					<!--<p class="card-text text-center img-overlay text-white" >Card Caption Goes Here.</p>-->
+					<div class="container">
+						<div class="row">
+							<div class="col-3 "></div>
+							<a href="content/page2.html" class="btn btn-info col-6">Call to Action</a>
+						</div><!-- closes row-->
+					</div><!--closes container-->
+				</div><!--closes image-overlay-->
+			</div><!--closes card-body-->
+		</div><!-- closes card-->
+		
+		</div><!--closes page-content-->
+		</center>
+		
+		<footer>
+			<!-- address, contact info-->
+			<div class="card">
+				<ul class="list-group text-center">
+					<li class="list-group-item">
+						<h6>Contact:</h6>
+					</li>
+					<li class="list-group-item">
+						<a href="mailto:ad.lxxxiv@gmail.com" class="btn btn-outline-primary">Email Me</a>
+					</li>
+					<li class="list-group-item">
+						<br>	
+						<h3>Andrew DePotter</h3>
+					</li>
+					<li class="list-group-item">
+						<p>Artist/Illustrator</p>
+					</li>
+					<li class="list-group-item">
+						<p>Now Accepting Quotes</p>
+					</li>
+					<li style="font-size: 2.5em">
+						<a href="#" class="fa fa-facebook" style="text-decoration : none" ></a>
+						<a href="#" class="fa fa-twitter" style="text-decoration : none"></a>
+						<a href="#" class="fa fa-instagram" style="text-decoration : none"></a>
+						<a href="#" class="fa fa-pinterest" style="text-decoration : none"></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		
+	</div><!--closes container fluid-->
+	
+	<script src='../js/animateHeadings.js'></script>
+	<script src='../js/populateLightBox.js'></script>
+	<script src='../js/closeLightBox.js'></script>	
+	<script src='../js/navPosition.js'></script>	
+		
+</body>
+</html>
