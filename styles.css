@@ -4,13 +4,12 @@
 /****** SPLASH PAGE STYLES ***********/
 
 #promotion {
-	background-image:url('media/gallery/manatee.jpg');
+	background-image:url('media/promotion/manatee.jpg');
 	background-size:cover;
 	background-repeat:no-repeat;
-	width:100%;
 	padding:0;
 	height:auto;
-	min-height:1200px;
+	min-height:600px;
 }
 
 #splashheader {
@@ -38,6 +37,8 @@
     background-position: center;
 }
 
+
+
 /**************** ARTIST SIGNATURE STYLES **********/
 
 .signature {
@@ -50,9 +51,31 @@
 
 
 	
-	/* Large devices (desktops, 992px and up)*/
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+	#promotion {
+	background-image:url('media/promotion/smallscreen/manatee.jpg');
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+	#promotion {
+	background-image:url('media/promotion/mediumscreen/manatee.jpg');
+	min-height:700px;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
 	#promotion {
-		min-height:900px;
+	min-height:900px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+	#promotion {
+	min-height:1300px;
 	}
 }

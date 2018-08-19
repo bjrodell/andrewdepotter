@@ -82,18 +82,19 @@ header .jumbotron img {
 
 
 
+
+
 /***************************** FOOTER STYLES *******************************/
 
+footer .list-group {
+	margin-bottom:8%;
+	margin-top:6%;
+}
 
 footer .list-group-item {
 	border:none;
 	margin:0;
 	padding:0;
-}
-
-footer .list-group {
-	margin-bottom:8%;
-	margin-top:6%;
 }
 
 footer p {
@@ -116,7 +117,7 @@ footer p {
 	z-index:99;
 }
 
-.card .btn {
+.page-content .card .btn {
 	position:absolute;
 	top:80%;
 	left:25%;
@@ -136,6 +137,9 @@ footer p {
 	padding:0;
 }
 
+.container-fluid {
+	min-height:1200px;
+}
 
 /**************************** NAVIGATION STYLES ***************************/
 
@@ -166,12 +170,23 @@ form {
 }
 
 input[type=text], input[type=email], select {
-    margin:1%;
-	margin-top:8%;
+    
     padding: 8px 10px;
     display: inline-block;
     box-shadow: 3px 3px 3px  #aaa;
     border-radius: 10px;
+}
+
+.form-check-input {
+	margin-left:13%;
+}
+
+.form-check-label {
+	margin-left:21%;
+}
+
+.form-row {
+	margin-top:3%;
 }
 
 /************************* ANIMATION DELAYS **********************************/
@@ -275,12 +290,18 @@ input[type=text], input[type=email], select {
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
-
+	.card {
+		width:30%;
+		height:50%;
+	}
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
-
+	.card {
+		width:20%;
+		height:50%;
+	}
 }
 
 
