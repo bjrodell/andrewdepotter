@@ -166,12 +166,23 @@ form {
 }
 
 input[type=text], input[type=email], select {
-    margin:1%;
-	margin-top:8%;
+    
     padding: 8px 10px;
     display: inline-block;
     box-shadow: 3px 3px 3px  #aaa;
     border-radius: 10px;
+}
+
+.form-check-input {
+	margin-left:13%;
+}
+
+.form-check-label {
+	margin-left:21%;
+}
+
+.form-row {
+	margin-top:3%;
 }
 
 /************************* ANIMATION DELAYS **********************************/
