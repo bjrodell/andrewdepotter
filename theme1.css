@@ -84,16 +84,15 @@ header .jumbotron img {
 
 /***************************** FOOTER STYLES *******************************/
 
+footer .list-group {
+	margin-bottom:8%;
+	margin-top:6%;
+}
 
 footer .list-group-item {
 	border:none;
 	margin:0;
 	padding:0;
-}
-
-footer .list-group {
-	margin-bottom:8%;
-	margin-top:6%;
 }
 
 footer p {
@@ -116,7 +115,7 @@ footer p {
 	z-index:99;
 }
 
-.card .btn {
+.page-content .card .btn {
 	position:absolute;
 	top:80%;
 	left:25%;
