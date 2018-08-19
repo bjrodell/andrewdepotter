@@ -28,12 +28,35 @@
 	<link rel="stylesheet" type="text/css" href="../styles.css">
 	
 	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../css/slides.css">
 </head>
 
 <body>
 
-	<div class="lightbox d-none">
+	<div class="lightbox" style="display: none">
 	</div>
+
+	<div class="lightbox-footer" style="display: none"> <!-- Additional LightBox HTML -->
+		<div id="test" style="display:inline-block;color:white; text-align:center;align:center;height: 100%;width: 100%;">		
+			<div class="thumbs" style="inline-block;">		
+				<img id="thumb" class="thumbnail" src="../media/gallery/facade.jpg" alt="0">
+			    <img id="thumb" class="thumbnail"  src="../media/gallery/davidbowie.jpg" alt="1">
+				<img id="thumb"class="thumbnail" src="../media/gallery/rhinopainting.jpg" alt="2">
+				<img id="thumb" class="thumbnail"  src="../media/gallery/barbershop.jpg" alt="3">
+				<img id="thumb" class="thumbnail"  src="../media/gallery/thewashroom.jpg" alt="4">
+				<img id="thumb" class="thumbnail"   src="../media/gallery/manatee.jpg" alt="5" > 		
+			</div>
+		    
+			
+			
+			<div><!-- Next/previous controls -->
+				<a class="slide-nav" onclick="prevSlide()"  style=" left:20px;">&#10094;</button>
+				<a class="slide-nav" onclick="nextSlide();" style=" right:20px;">&#10095;</button>
+			</div>
+
+		</div>
+		
+	</div><!-- end of lightbox footer -->
     
 	<div class="container-fluid" id="container-fluid">
 	
@@ -111,7 +134,7 @@
 		<div class="page-content">
 		<center>
 		<div class="card index-card-1 animated delay-1">
-			<div class="card-header">
+			<div class="card-header d-none">
 				<h3 class="animated card-title delay-2" style="Text-align: left">Facade</h3>
 			</div>
 			<div class="card-body d-none">
@@ -129,7 +152,7 @@
 		</div><!--closes card-->
 		
 		<div class="card index-card-2 animated delay-1">
-			<div class="card-header">
+			<div class="card-header d-none">
 				<h3 class="animated card-title delay-2"  style="Text-align: left">Keep Your ‘Lectric eye on me, babe</h3>
 			</div>
 			<div class="card-body d-none">
@@ -147,7 +170,7 @@
 		</div><!-- closes card-->
 		
 		<div class="card index-card-3 animated delay-1">
-			<div class="card-header">
+			<div class="card-header d-none">
 				<h3 class="animated card-title delay-2"  style="Text-align: left">Rhino</h3>
 			</div>
 			<div class="card-body d-none">
@@ -165,7 +188,7 @@
 		</div><!-- closes card-->
 		
 		<div class="card index-card-4 animated delay-1">
-			<div class="card-header">
+			<div class="card-header d-none">
 				<h3 class="animated card-title delay-2"  style="Text-align: left">Meanwhile, at the barbershop...
 </h3>
 			</div>
@@ -184,7 +207,7 @@
 		</div><!-- closes card-->
 		
 		<div class="card index-card-5 animated delay-1">
-			<div class="card-header">
+			<div class="card-header d-none">
 				<h3 class="animated card-title delay-2"  style="Text-align: left">The (wash) Room</h3>
 			</div>
 			<div class="card-body d-none">
@@ -202,7 +225,7 @@
 		</div><!-- closes card-->
 		
 		<div class="card index-card-6 animated delay-1">
-			<div class="card-header">
+			<div class="card-header d-none">
 				<h3 class="animated card-title delay-2"  style="Text-align: left">Manatee</h3>
 			</div>
 			<div class="card-body d-none">
@@ -260,6 +283,7 @@
 	<script src='../js/navPosition.js'></script>
 	<script src='../js/showCardButton.js'></script>
 	<script src='../js/noSave.js'></script>
-	<script src='../js/pageLoad.js'></script>
+	<script src='../js/pageLoad.js'></script>	
+	<script src='../js/populateLightBox.js'></script> 
 </body>
 </html>
