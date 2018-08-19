@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Page Title</title>
+	<title>Home Page</title>
 	<link rel="icon" href="#"><!-- used for icon in tab-->
 	
 	<!--BOOTSTRAP 4-->
@@ -16,7 +16,7 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	
-	<script src="//use.edgefonts.net/josefin-sans;source-sans-pro.js"></script><!--global fonts-->
+	<script src="//use.edgefonts.net/gruppo.js"></script><!--global fonts-->
 	
 	<!-- CSS containing social media icons:  Reference https://www.w3schools.com/howto/howto_css_social_media_buttons.asp for more info -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,13 +35,16 @@
 	<div class="lightbox d-none">
 	</div>
     
-	<div class="container-fluid">
+	<div class="container-fluid" id="container-fluid">
 	
 		<header>	
 			<!-- navigation-->
-			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light">
+			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-white">
 			
-				<a class="navbar-brand" href='#'>Page Title</a>
+				<div class="navbar-brand">
+					<h5 class="signature">Drew Depotter</h5>
+					<h6 class="signature">Artist</h6>
+				</div>
 				
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -49,40 +52,40 @@
 				
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				
-				<ul class="navbar-nav">
-					<li class="nav-item col-md-2 active">
+				<ul class="navbar-nav nav-fill w-100">
+					<li class="nav-item active">
 						<a class="nav-link" href='../index.html'>Home</a>
 					</li>
-					<li class="nav-item col-md-2">
+					<li class="nav-item">
 						<a class="nav-link" href="quote.html">Request Quote</a>
 					</li>
-					<li class="nav-item col-md-2 dropdown" >
+					<li class="nav-item dropdown" >
 						<a class="nav-item nav-link dropdown-toggle" href='#' id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Collections</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
 							<a class="dropdown-item" href="tattoo.html">Collection 1</a>
 							<a class="dropdown-item" href="#">Collection 2</a>
 						</div>
 					</li>
-					<li class="nav-item col-md-2 dropdown" id="navbarDropdown1">
+					<li class="nav-item dropdown" id="navbarDropdown1">
 						<a class="nav-item nav-link dropdown-toggle" href='#'  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Logos</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown1">
 							<a class="dropdown-item" href="#">Business/Professional</a>
 							<a class="dropdown-item" href="#">Fantasy Sports Logos</a>
 						</div>
 					</li>
-					<li class="nav-item col-md-3">
+					<li class="nav-item">
 						<a class="nav-link" href='posterart.html'>Poster Art</a>
 					</li>
-					<li class="nav-item col-md-2">
+					<li class="nav-item">
 						<a class="nav-link" href='albumart.html'>Album Art</a>
 					</li>
-					<li class="nav-item col-md-2">
+					<li class="nav-item">
 						<a class="nav-link" href='tattoo.html'>Tattoo Design</a>
 					</li>
-					<li class="nav-item col-md-2">
+					<li class="nav-item">
 						<a class="nav-link" href='digital.html'>Digital</a>
 					</li>
-					<li class="nav-item col-md-2">
+					<li class="nav-item">
 						<a class="nav-link" href='storyboards.html'>Storyboards</a>
 					</li>
 				</ul>
@@ -92,16 +95,7 @@
 			<div  class="jumbotron jumbotron-fluid" >
 				<div class="container">
 					<div class="row">
-						<h1 class="col-sm-10 col-md-8 col-lg-6">Andrew DePotter</h1>
-					</div>
-					<div class="row">
-						<h5 class="col-sm-9 col-md-2 col-lg-2">Artist/Illustrator</h5>
-						<div class="col-sm-0 col-md-2 col-lg-4"></div>
-						<h6 class="col-sm-10 col-md-3 col-lg-3"><a href="mailto:ad.lxxxiv@gmail.com">ad.lxxxiv@gmail.com</a></h6>
-					</div><!--ends row-->
-					<div class="row">
-						<a href="quote.html" class="btn btn-info col-sm-3 col-md-3 col-lg-4">Request a Quote</a>
-						<div class="col-sm-0 col-md-1 col-lg-2"></div>
+						<h6 class="col-sm-8 col-md-8 col-lg-8"><a href="mailto:ad.lxxxiv@gmail.com">ad.lxxxiv@gmail.com</a></h6>
 						<h2 class="col-sm-4 col-md-4 col-lg-4">
 							<a href="#" class="fa fa-facebook" style="text-decoration : none" ></a>
 							<a href="#" class="fa fa-twitter" style="text-decoration : none"></a>
@@ -109,6 +103,7 @@
 							<a href="#" class="fa fa-pinterest" style="text-decoration : none"></a>
 						</h2>
 					</div><!--ends row-->
+					
 				</div>
 			</div>
 		</header>
@@ -126,7 +121,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-3"></div>
-							<a href="content/page1.html" class="btn btn-info col-6 d-none animated delay-1">Call to Action</a>
+							<a href="quote.html" class="btn btn-info col-6 d-none animated delay-1">Call to Action</a>
 						</div><!-- closes row-->
 					</div><!--closes container-->
 				</div><!--closes image overlay-->
@@ -144,7 +139,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-3 "></div>
-							<a href="content/page2.html" class="btn btn-info col-6 d-none animated delay-1">Call to Action</a>
+							<a href="quote.html" class="btn btn-info col-6 d-none animated delay-1">Contact Me</a>
 						</div><!-- closes row-->
 					</div><!--closes container-->
 				</div><!--closes image-overlay-->
@@ -162,7 +157,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-3 "></div>
-							<a href="content/page2.html" class="btn btn-info col-6 d-none animated delay-1">Call to Action</a>
+							<a href="quote.html" class="btn btn-info col-6 d-none animated delay-1">Contact Me</a>
 						</div><!-- closes row-->
 					</div><!--closes container-->
 				</div><!--closes image-overlay-->
@@ -181,7 +176,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-3 "></div>
-							<a href="content/page2.html" class="btn btn-info col-6 d-none animated delay-1">Call to Action</a>
+							<a href="connect.html" class="btn btn-info col-6 d-none animated delay-1">Connect</a>
 						</div><!-- closes row-->
 					</div><!--closes container-->
 				</div><!--closes image-overlay-->
@@ -199,7 +194,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-3 "></div>
-							<a href="content/page2.html" class="btn btn-info col-6  d-none">Call to Action</a>
+							<a href="quote.html" class="btn btn-info col-6  d-none">Quote</a>
 						</div><!-- closes row-->
 					</div><!--closes container-->
 				</div><!--closes image-overlay-->
@@ -217,7 +212,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-3 "></div>
-							<a href="content/page2.html" class="btn btn-info col-6 d-none animated delay-1">Call to Action</a>
+							<a href="quote.html" class="btn btn-info col-6 d-none animated delay-1">Connect</a>
 						</div><!-- closes row-->
 					</div><!--closes container-->
 				</div><!--closes image-overlay-->
@@ -259,10 +254,12 @@
 		
 	</div><!--closes container fluid-->
 	
+	<div id="loading"></div>
+	
 	<script src='../js/animateHeadings.js'></script>
-	<script src='../js/populateLightBox.js'></script>
-	<script src='../js/closeLightBox.js'></script>
 	<script src='../js/navPosition.js'></script>
 	<script src='../js/showCardButton.js'></script>
+	<script src='../js/noSave.js'></script>
+	<script src='../js/pageLoad.js'></script>
 </body>
 </html>
