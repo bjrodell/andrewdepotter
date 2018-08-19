@@ -19,6 +19,12 @@
 	height:auto;
 }
 
+/**************** Artist Signature **********/
+
+.signature {
+	font-family: gruppo, sans-serif;
+}
+
 
 	
 	/* Large devices (desktops, 992px and up)*/
