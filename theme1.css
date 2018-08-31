@@ -117,6 +117,10 @@ footer p {
 	z-index:99;
 }
 
+.card-imag-overlay {
+	z-index:98;
+}
+
 .page-content .card .btn {
 	position:absolute;
 	top:80%;
@@ -131,10 +135,6 @@ footer p {
 .card-body img {
 	border-radius:10px;
 	width:100%;
-}
-
-.card-img-overlay, .card .container, .card-body, .container-fluid {
-	padding:0;
 }
 
 .container-fluid {
