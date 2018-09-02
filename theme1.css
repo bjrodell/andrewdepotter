@@ -107,6 +107,7 @@ footer p {
 .card{
 	border:none;
 	margin-bottom:5%;
+	height:25%;
 }
 
 .card p {
@@ -286,6 +287,10 @@ input[type=text], input[type=email], select {
 		width:100%;
 		padding-top:0%;
 	}
+	
+	.card-body img {
+		height:400px;
+	}
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -294,6 +299,10 @@ input[type=text], input[type=email], select {
 		width:30%;
 		height:50%;
 	}
+	
+	.card-body img {
+		height:300px;
+	}
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -301,6 +310,10 @@ input[type=text], input[type=email], select {
 	.card {
 		width:20%;
 		height:50%;
+	}
+	
+	.card-body img {
+		height:200px;
 	}
 }
 
