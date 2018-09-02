@@ -18,18 +18,11 @@ jQuery(document).ready(function($){
 	  var image_src = $(this).children(".gallery").attr("src"); 
 	  var title = $(this).children(".gallery").attr("title");	//can be used in lightbox to add a blurb of the art  
 	  counter = $(this).children(".gallery").attr("alt");
-	  
-	  var footerhtml = $('.lightbox-footer').html(); /**footer is a depricated name - retrieves the 
-													  html from the div with class .lightbox-footer
-													  stores in string named footerhtml */
-													  											  
-	    $('.lightbox').html('<img id="centerStage" src ="' +image_src+ '"  style="height: 95%;width: auto;">'+''+ 
-		footerhtml +'<button type="button" class="close" aria-label="Close" style="position: absolute; top: 5px; right: 30px;">'+
-		'<span onclick="closeLightBox()" aria-hidden="true">&times;</span>'+'</button>');
-		//Inserts HTML into div with .lightbox class. Utilizes string footerhtml to create thumbnails 
-		//and lightbox navigation
-		
-		$('.lightbox').fadeIn(1000);  //Makes lightbox visible by using jquery function fadeIn()
+
+	  var footerhtml = $('.lightbox-footer').html();
+	    $('.lightbox').html('<img id="centerStage" src ="' +image_src+ '"  style="height: 85%;width: auto;">'+'<p>'+ title +'</p>'+ footerhtml +'<button type="button" class="close" aria-label="Close" >'+'<span onclick="closeLightBox()" aria-hidden="true">&times;</span>'+'</button>');
+		$('.lightbox').fadeIn(1000);
+
 		$('body').css('overflow','hidden');
 		
 		$('.thumbnail').on("click",function(){ //executes when thumbnail is clicked
