@@ -44,6 +44,10 @@ h5, h6 {
 	border-color:#c1f2ff;
 }
 
+/****************************  PAGE CONTENT STYLES ******************************/
+.page-content {
+	margin-top:5%;
+}
 
 /**************************** HEADING TAG STYLES *********************************/
 
@@ -231,7 +235,7 @@ input[type=text], input[type=email], select {
 	height:100%;
 	width:100%;
 	background-color:rgba(0,0,0,0.8);
-	z-index:20;
+	z-index:1040;
 }
 
 .lightbox img {
@@ -250,6 +254,9 @@ input[type=text], input[type=email], select {
 .close {
 	color:#ffffff;
 	font-size:3.0em;
+	position: fixed; 
+	top: 2%; 
+	left:90%;
 }
 
 .close:hover {

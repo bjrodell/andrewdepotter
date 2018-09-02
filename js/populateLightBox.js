@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
 	  var title = $(this).children(".gallery").attr("title"); 
 	  counter = $(this).children(".gallery").attr("alt");
 	  var footerhtml = $('.lightbox-footer').html();
-	    $('.lightbox').html('<img id="centerStage" src ="' +image_src+ '"  style="height: 85%;width: auto;">'+'<p>'+ title +'</p>'+ footerhtml +'<button type="button" class="close" aria-label="Close" style="position: absolute; top: 5px; right: 30px;">'+'<span onclick="closeLightBox()" aria-hidden="true">&times;</span>'+'</button>');
+	    $('.lightbox').html('<img id="centerStage" src ="' +image_src+ '"  style="height: 85%;width: auto;">'+'<p>'+ title +'</p>'+ footerhtml +'<button type="button" class="close" aria-label="Close" >'+'<span onclick="closeLightBox()" aria-hidden="true">&times;</span>'+'</button>');
 		$('.lightbox').fadeIn(1000);
 		$('body').css('overflow','hidden');
 		
