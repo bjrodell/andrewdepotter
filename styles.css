@@ -18,6 +18,13 @@
 	height:auto;
 }
 
+#promotion .btn {
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:70%;
+}
+
 /******************PAGE LOAD STYLES***********/
 
 #container-fluid {
@@ -56,6 +63,13 @@
 	#promotion {
 	background-image:url('media/promotion/smallscreen/manatee.jpg');
 	}
+	
+	#promotion .btn {
+	width:100%;
+	min-width:200px;
+	margin-top:2%;
+	margin-left:60%;
+	}
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -64,12 +78,21 @@
 	background-image:url('media/promotion/mediumscreen/manatee.jpg');
 	min-height:700px;
 	}
+	
+	#promotion .btn {
+	width:100%;
+	margin-left:-2%;
+	}
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
 	#promotion {
 	min-height:900px;
+	}
+	
+	#promotion .btn {
+	margin-left:0%;
 	}
 }
 
