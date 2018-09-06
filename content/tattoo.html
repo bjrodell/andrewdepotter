@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="cards">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,9 +30,12 @@
 	
 	<link rel="stylesheet" type="text/css" href="../css/animate.css">
 	<link rel="stylesheet" type="text/css" href="../css/slides.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="../js/deckOfCards.js"></script>
 </head>
 
-<body>
+<body ng-controller="cardsController">
 
 	<div class="lightbox" style="display: none">
 	</div>
@@ -134,12 +137,12 @@
 		
 		<div class="page-content">
 		<center>
-		<div class="card index-card-1 animated delay-1">
+		<div ng-repeat="card in cards" class="card index-card-1 animated delay-1">
 			<div class="card-header">
-				<h3 class="animated card-title delay-2" style="Text-align: left">Facade</h3>
+				<h3 class="animated card-title delay-2" style="Text-align: left">{{card.name}}</h3>
 			</div>
 			<div class="card-body d-none">
-				<img src="../media/gallery/facade.jpg" class="card-img-top  gallery">
+				<img src="{{card.imageUrl}}" class="card-img-top  gallery">
 				<div class="card-img-overlay text-center">
 					<!--<p class="card-text text-center img-overlay text-white">Card Caption goes here.</p>-->
 					<div class="container">
@@ -278,13 +281,14 @@
 		
 	</div><!--closes container fluid-->
 	
-	<div id="loading"></div>
+	
 	
 	<script src='../js/animateHeadings.js'></script>
 	<script src='../js/navPosition.js'></script>
 	<script src='../js/showCardButton.js'></script>
 	<script src='../js/noSave.js'></script>	
 	<script src='../js/pageLoad.js'></script>	
+	<!--<div id="loading"></div>-->
 	<script src='../js/populateLightBox.js'></script> 
 	<script src='../js/closeLightBox.js'></script>
 		
